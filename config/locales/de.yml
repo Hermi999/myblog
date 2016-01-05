@@ -1,0 +1,9 @@
+de:
+  welcome:
+    header:
+      home: "HOME"
+      portfolio: "PORTFOLIO"
+      about: "ABOUT"
+      resume: "RESUME"
+      blog: "BLOG"
+      contact: "CONTACT"

@@ -1,0 +1,185 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body{
+  background-color: #5A1E1E;
+}
+
+#content_wrapper{
+  display: none;
+}
+
+#loading_wrapper{
+  position: absolute;
+  top: 45%;
+  text-align: center;
+  width: 100%;
+}
+
+#loading{
+  z-index: 1000;
+  color: #B05252;
+}
+
+.section{
+  padding: 80px 20px 0;
+  background-color: white;
+  font-family: "adobe-garamond-pro,Helvetica,Arial,sans-serif";
+}
+.section-grey{
+  background-color: #F6F6F6;
+}
+
+.section_title{
+  text-align: center;
+}
+
+.section_text{
+  color: #6C6B6B;
+  padding-top: 20px;
+  text-align: center;
+  //font-family: 'Montserrat', sans-serif;
+}
+
+.section_devider{
+  margin-top: 80px;
+  height:2px;
+  border-bottom: 1px solid rgba(209, 209, 209, 0.84);
+}
+
+#profile_image_wrapper{
+  position: relative;
+  width:100%;
+  text-align: center;
+  top: 40%;
+}
+#profile_pic{
+  width: 170px;
+  height: 170px;
+  border-radius: 100px;
+  position: relative;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.project_image_column{
+  margin-bottom: 20px;
+  padding: 0;
+}
+.projects_images{
+  width: 94%;
+  color: white;
+}
+.projects_images_wrapper{
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  width: 100%;
+}
+.projects_images_wrapper:hover{
+  background-color: rgba(0, 0, 0, 0.45);
+}
+.welcome_button{
+  display: inline-block;
+  padding: 7px 16px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 3px;
+  color: black;
+  cursor: pointer;
+  font-size: 14px;
+}
+.welcome_button:hover{
+  text-decoration: none;
+  background-color: black;
+  color: white;
+}
+.project_type{
+  @include media-breakpoint-up(lg) {
+    display: none;
+  }
+
+  margin-top: 25%;
+  font-size: 12px;
+  margin-bottom: 4px;
+  font-style: italic;
+}
+.project_title{
+  @include media-breakpoint-up(lg) {
+    display: none;
+  }
+  text-transform: uppercase;
+  font-size: 21px;
+  font-weight: 600;
+  margin: 8px 0 15px;
+}
+.project_view_button{
+  @include media-breakpoint-up(lg) {
+    display: none;
+  }
+  color: white;
+  border-color: white;
+  background: none;
+  width: 138px;
+  margin: auto;
+}
+.project_view_button:hover{
+  background: white;
+  color: black;
+}
+#project_image_1{
+  background: url("/assets/header1_helligkeit99.jpg");
+  background-size: cover;
+}
+#project_image_2{
+  background: url("/assets/header1_helligkeit99.jpg");
+}
+#project_image_3{
+  background: url("/assets/header1_helligkeit99.jpg");
+}
+#more_projects_btn{
+  margin-top: 10px;
+}
+
+
+.about_images{
+  padding:0;
+}
+.about_images_img{
+  background-size: cover!important;
+  cursor: pointer;
+}
+#aboutme_btn{
+  margin-top: 20px;
+}
+
+
+.modal.and.carousel {
+  position: fixed; // Needed because the carousel overrides the position property
+}
+.modal-content{
+  background-color: #2C2C2C;
+}
+.modal-header{
+  border-bottom: 1px solid rgba(229, 229, 229, 0.19);
+  button{
+    color: white;
+    opacity: 0.9;
+  }
+  button:hover{
+    color: #FE0606;
+    text-shadow: 0px 1px 0px #FE0606;
+  }
+}
+.modal-footer{
+  border-top: 1px solid rgba(229, 229, 229, 0.19);
+  color: #969696;
+  font-size: 14px;
+  text-align: center;
+}
+.carousel-caption{
+  bottom:5px;
+  padding-bottom: 0px;
+}

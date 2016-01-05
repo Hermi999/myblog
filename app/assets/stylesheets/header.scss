@@ -1,0 +1,151 @@
+#header{
+  background-image: url("/assets/heade2_helligkeit60_contrast60.jpg");
+  height:400px;
+  background-size: cover;
+
+  button{
+    color: #F3F1F1;
+    border: 2px solid #F3F1F1;
+    margin: 17px 8px 0px;
+  }
+  button:hover{
+    color: white;
+    border: 3px solid white;
+  }
+}
+
+
+#header_logo_link_mobile{
+  float: right;
+  img{
+    width:75px;
+  }
+}
+
+#header_logo_link_desktop{
+  img{
+    width:75px;
+  }
+}
+
+#headerNavbar{
+  a{
+    color: #F3F1F1;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-style: normal;
+    //line-height: 1em;
+    font-size: 13px;
+    text-shadow: 0px 0px 1px rgb(0, 0, 0);
+  }
+  a:hover{
+    color: white;
+    font-weight: 600;
+  }
+}
+
+.nav{
+  padding-top: 15px;
+}
+
+#contact_menu_element{
+  color: #F0D38F!important;
+  border: none;
+  padding-top: 0.425rem;
+
+  @include media-breakpoint-up(md) {
+    color: #F3F1F1!important;
+    border: 2px solid #F3F1F1;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+}
+#contact_menu_element:hover{
+  background-color: none!important;
+
+  @include media-breakpoint-up(md) {
+    border-color: white;
+    background-color: white;
+    color: black !important;
+  }
+}
+
+.navbar-nav .menu_element{
+  @include media-breakpoint-down(sm) {
+    float:none;
+    margin-left:15px;
+  }
+}
+
+#headline{
+  display: none;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  top: 40%;
+  font-size: 30px;
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+
+
+  @include media-breakpoint-up(sm){
+    font-size: 40px;
+  }
+
+  @include media-breakpoint-up(md){
+    font-size: 70px;
+  }
+}
+
+
+#header_button_wrapper{
+  display: none;
+  position: relative;
+  width: 100%;
+  top: 44%;
+  text-align: center;
+}
+
+.header_button{
+  color: #F3F1F1;
+  border: 2px solid #F3F1F1;
+  padding: 10px 0;
+  border-radius: 5px;
+  display: inline-block;
+  width:135px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 15px;
+  text-shadow: 0px 0px 1px #000;
+}
+.header_button:hover{
+  color: black!important;
+  background-color: white;
+  cursor: pointer;
+}
+#button1{
+  margin-right: 20px;
+}
+
+#scrollDown{
+  display: none;
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+
+  color: white;
+  text-align: center;
+}
+#scrollDown:hover{
+  cursor: pointer;
+  bottom: 45px;
+  color: #EDB985;
+}

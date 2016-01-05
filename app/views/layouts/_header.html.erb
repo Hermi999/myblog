@@ -1,0 +1,38 @@
+<header id="header">
+
+  <nav class="navbar navbar-fixed-top navbar-inverse">
+    <button class="navbar-toggler hidden-md-up" type="button" data-toggle="collapse" data-target="#headerNavbar">&#9776;</button>
+
+    <a class="navbar-brand hidden-md-up" id="header_logo_link_mobile" href="#">
+      <img src="/assets/logo_weiss_transparent.PNG">
+    </a>
+
+    <div class="collapse navbar-toggleable-sm" id="headerNavbar">
+      <a class="navbar-brand hidden-sm-down" id="header_logo_link_desktop" href="#">
+        <img src="/assets/logo_weiss_transparent.PNG">
+      </a>
+
+      <div class="nav navbar-nav pull-md-right">
+        <%= link_to t("welcome.header.home"), '#', :class => "nav-item nav-link active menu_element" %>
+        <%= link_to t("welcome.header.portfolio"), '#', :class => "nav-item nav-link menu_element" %>
+        <%= link_to t("welcome.header.about"), '#', :class => "nav-item nav-link menu_element" %>
+        <%= link_to t("welcome.header.resume"), '#', :class => "nav-item nav-link menu_element" %>
+        <%= link_to t("welcome.header.blog"), '#', :class => "nav-item nav-link menu_element" %>
+        <%= link_to t("welcome.header.contact"), '#', :class => "nav-item nav-link menu_element", :id => "contact_menu_element" %>
+      </div>
+    </div>
+  </nav>
+
+  <h1 id="headline"><%= t("welcome.header.headline") %></h1>
+
+
+  <div id="header_button_wrapper">
+    <div id="button1" class="header_button">CONTACT</div>
+    <div id="button2" class="header_button">RESUME</div>
+  </div>
+
+  <div id="scrollDown">
+    <i class="fa fa-chevron-down fa-3x"></i>
+  </div>
+
+</header>

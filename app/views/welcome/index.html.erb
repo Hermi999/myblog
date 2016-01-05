@@ -1,0 +1,190 @@
+
+<% content_for :title do %>
+  Hermann Wagner
+<% end %>
+
+
+<div id="background" class="section">
+  <h2 class="section_title"><%= t("welcome.background.title") %></h2>
+
+  <div id="profile_image_wrapper">
+    <img src="/assets/profilbild_quadrad.jpg" id="profile_pic">
+  </div>
+
+  <div class="section_text">
+    <div class="row">
+      <div class="col-xs-offset-1 col-xs-10 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10 col-xl-offset-2 col-xl-8">
+
+        <div class="row">
+          <div class="col-md-offset-2 col-md-8 col-lg-offset-2 col-lg-8 col-xl-offset-2 col-xl-8">
+            <p><%= t("welcome.background.text").html_safe %></p>
+          </div>
+        </div>
+        <div class="row section_devider"></div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="projects" class="section">
+  <h2 class="section_title"><%= t("welcome.projects.title") %></h2>
+
+  <div class="section_text">
+    <div class="row">
+      <div class="col-xs-offset-1 col-xs-10 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10 col-xl-offset-2 col-xl-8">
+
+        <div class="row">
+          <div class="col-sm-6 col-lg-4 project_image_column">
+            <div class="div_ratio_4_3">
+              <div class="div_ratio_4_3_content_wrapper projects_images" id="project_image_1">
+                <div class="projects_images_wrapper">
+                  <p class="project_type">Project type</p>
+                  <h3 class="project_title">Project title</h3>
+                  <div class="welcome_button project_view_button">View project</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 project_image_column">
+            <div class="div_ratio_4_3">
+              <div class="div_ratio_4_3_content_wrapper projects_images" id="project_image_1">
+                <div class="projects_images_wrapper">
+                  <p class="project_type">Project type</p>
+                  <h3 class="project_title">Project title</h3>
+                  <div class="welcome_button project_view_button">View project</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 project_image_column">
+            <div class="div_ratio_4_3">
+              <div class="div_ratio_4_3_content_wrapper projects_images" id="project_image_1">
+                <div class="projects_images_wrapper">
+                  <p class="project_type">Project type</p>
+                  <h3 class="project_title">Project title</h3>
+                  <div class="welcome_button project_view_button">View project</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <a id="more_projects_btn" class="welcome_button"><%= t("welcome.projects.button") %></a>
+
+        <div class="row section_devider"></div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div id="aboutme" class="section">
+  <h2 class="section_title"><%= t("welcome.aboutme.title") %></h2>
+
+  <div class="section_text">
+    <div class="row">
+      <div class="col-xs-offset-1 col-xs-10 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10 col-xl-offset-2 col-xl-8">
+
+        <div class="row">
+          <% @images.each_with_index  do |image, index| %>
+            <div class="col-xs-6 col-sm-4 col-lg-2 about_images">
+              <div class="div_ratio_1_1">
+                <div  class="div_ratio_1_1_content_wrapper about_images_img"
+                      style="background: <%= 'url(/assets/' + image + ');' %>"
+                       data-toggle="modal"
+                       data-target="#about_me_carousel"
+                       data-slide-to="<%= index %>"></div>
+              </div>
+            </div>
+          <% end %>
+        </div>
+
+
+        <!-- Modal -->
+        <div class="modal fade and carousel slide" id="about_me_carousel"
+             tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+             aria-hidden="true" data-ride="carousel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+
+              <div class="modal-body">
+
+                  <div class="carousel-inner" role="listbox">
+
+                    <% @images.each_with_index  do |image, index| %>
+                      <% if index == 0
+                          active = "active"
+                         else
+                          active = ""
+                         end
+                      %>
+                      <div class="carousel-item <%= active %>">
+                        <img data-src="/assets/<%= image %>"
+                             src="/assets/<%= image %>"
+                             alt="<%= @image_title[index] %>">
+                        <div class="carousel-caption">
+                          <p><%= @image_title[index] %></p>
+                        </div>
+                      </div>
+                    <% end %>
+                  </div>
+                  <a class="left carousel-control" href="#about_me_carousel" role="button" data-slide="prev">
+                    <span class="icon-prev" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="right carousel-control" href="#about_me_carousel" role="button" data-slide="next">
+                    <span class="icon-next" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+
+              </div>
+              <div class="modal-footer">
+                Navigate with mouse or keyboard...
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a id="aboutme_btn" class="welcome_button"><%= t("welcome.aboutme.button") %></a>
+
+        <div class="row section_devider"></div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div id="blog" class="section">
+  <h2 class="section_title"><%= t("welcome.blog.title") %></h2>
+
+  <div class="section_text">
+    <div class="row">
+      <div class="col-xs-offset-1 col-xs-10 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10 col-xl-offset-2 col-xl-8">
+
+        <div class="row">
+          <div class="col-md-offset-2 col-md-8 col-lg-offset-2 col-lg-8 col-xl-offset-2 col-xl-8">
+            <p><%= t("welcome.blog.text") %></p>
+          </div>
+        </div>
+        <div class="row section_devider"></div>
+
+      </div>
+    </div>
+  </div>
+</div>

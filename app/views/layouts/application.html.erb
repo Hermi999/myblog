@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <%= render :partial => 'layouts/head' %>
+
+  <body>
+    <div id="loading_wrapper">
+      <i id="loading" class="fa fa-circle-o-notch fa-spin fa-5x"></i>
+    </div>
+
+
+    <div id="content_wrapper">
+      <%= render :partial => 'layouts/header' %>
+
+      <div class="content">
+        <%= yield %>
+      </div>
+
+      <%= render :partial => 'layouts/footer' %>
+    </div>
+
+  </body>
+</html>

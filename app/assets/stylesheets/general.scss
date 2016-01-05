@@ -1,0 +1,31 @@
+@font-face{
+    font-family: "adobe-garamond-pro";
+    src: url('adobe-garamond-pro.ttf'),
+    url('adobe-garamond-pro.ttf'); /* IE */
+}
+
+.translation_missing{
+  color: white;
+  background-color: red;
+}
+
+
+.div_ratio_4_3{
+  width: 100%;
+  padding-bottom: 75%;
+
+  .div_ratio_4_3_content_wrapper{
+    position: absolute;
+    top: 0; bottom: 0; left: 3%; right: 3%;
+  }
+}
+
+.div_ratio_1_1{
+  width: 100%;
+  padding-bottom: 106%;
+
+  .div_ratio_1_1_content_wrapper{
+    position: absolute;
+    top: 5%; bottom: 5%; left: 5%; right: 5%;
+  }
+}

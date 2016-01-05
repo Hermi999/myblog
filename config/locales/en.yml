@@ -1,0 +1,88 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+en:
+  welcome:
+    header:
+      home: "HOME"
+      portfolio: "PORTFOLIO"
+      about: "ABOUT"
+      resume: "RESUME"
+      blog: "BLOG"
+      contact: "CONTACT"
+      headline: "CTO. FULL STACK DEVELOPER."
+    background:
+      title: "A brief background"
+      text: "After working for 5 years as Software System Designer and Software Architect in the automotive industry I started to get interested in Startups. After some research (reading books, blogs & articles) and visiting startup events, I started a project called Rentog together with my co-founder and friend Peter. And I have to tell you: I really love the startup scene. It's so refreshing and exciting to have ability to really change things, learn & invent new stuff and to take full responsibility for your work and actions.<br><br>I spend much of my time in front of a screen. When I work on a project I emphasize espeically on clean code, good comments, awesome user experience and IT Security."
+    projects:
+      title: "My latest projects"
+      text: ""
+      button: "View more projects"
+    aboutme:
+      title: "A look into my life"
+      text: ""
+      button: "Learn more about me"
+      image0:
+        title: "Finally arrived at the sea in Bibione (Italy), after a 600km bike tour with a friend."
+      image1:
+        title: "Me in front of Ellis Island and the skyline of Manhatten. My girlfriend took this picture on Liberty Island on a 3 weeks holiday where we went from Key West to New York by car."
+      image2:
+        title: "Holiday in Croatia with friends."
+      image3:
+        title: "A startup event at the Vienna University of Economics and Business"
+      image4:
+        title: "Who says you can't program on your laptop while enjoying a sunny day in Styria (@ my parents house)."
+      image5:
+        title: "This is how I work at home in my flat in vienna."
+      image6:
+        title: "Getting the BMW driving license on an old military base."
+      image7:
+        title: "The one and only :) (In front of the White House)."
+      image8:
+        title: "Our team's Kanban board after the Unicredit Appathon 2015."
+      image9:
+        title: "I really love nature!"
+      image10:
+        title: "My parents house in Styria."
+      image11:
+        title: "My living room. No, just kidding. This is what you get when you are booking with AirBnB: An awesome mansion from the 18th century all for yourself :)"
+    blog:
+      title: "Things I write and care about"
+      text: ""
+      button: ""
+
+  footer:
+    first_name: "Hermann"
+    last_name: "Wagner"
+    links:
+      home: "HOME"
+      portfolio: "PORTFOLIO"
+      about: "ABOUT"
+      resume: "RESUME"
+      blog: "BLOG"
+      contact: "CONTACT"
+      headline: "CTO. FULL STACK DEVELOPER."
+    copyright: "© 2016 Hermann Wagner. All rights reserved. Full Stack Dev / CTO Rentog"
+
+
+
+
+
